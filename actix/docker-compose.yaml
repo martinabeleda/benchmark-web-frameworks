@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  actix:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://actix:password@db/actix
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: actix
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: actix
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:

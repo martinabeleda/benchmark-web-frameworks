@@ -1,2 +1,9 @@
-# benchmark-web-frameworks
-A repository to benchmark popular web frameworks in different languages
+# Web Framework Benchmarks
+
+A repository to try and benchmark popular web frameworks in different languages
+
+## Frameworks
+
+- [ ] `actix-web` (Rust)
+- [ ] `gin` (go)
+- [ ] `fastapi` (python)
