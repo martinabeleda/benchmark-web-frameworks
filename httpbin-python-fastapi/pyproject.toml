@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "httpbin-python-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["martinabeleda <martin.abeleda@gmail.com>"]
+readme = "README.md"
+packages = [{include = "httpbin_python_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.261"
+pytest = "^7.3.0"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
