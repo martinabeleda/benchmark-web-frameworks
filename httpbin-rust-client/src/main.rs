@@ -43,7 +43,7 @@ async fn test_get(client: &Client, base_url: &str) -> Result<(), Box<dyn Error>>
         .await?;
 
     assert_eq!(response.key, key);
-    assert_eq!(response.value, "Hello, Axum!");
+    assert_eq!(response.value, "Hello, World!");
 
     println!("GET test passed!");
 

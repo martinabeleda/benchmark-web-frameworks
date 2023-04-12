@@ -45,7 +45,7 @@ async fn get_handler(
     // For simplicity, we are returning a static value for any key
     let response = GetResponse {
         key,
-        value: "Hello, Axum!".to_string(),
+        value: "Hello, World!".to_string(),
     };
     (StatusCode::OK, Json(response))
 }
